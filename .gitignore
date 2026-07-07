@@ -1,0 +1,29 @@
+# dependencies
+**/node_modules
+
+# production
+/dist
+
+# env files
+.env
+.env.*
+!.env.example
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+/coverage
+.idea
+.vscode
+*.log
+
+# umi
+.umi
+.umi-production
+.umi-test
+.turbopack
+
+# lockfiles managed per project policy
+package-lock.json
+yarn.lock

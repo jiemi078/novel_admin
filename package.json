@@ -1,0 +1,40 @@
+{
+  "name": "novel-admin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Novel admin console based on Umi Max and Ant Design Pro",
+  "scripts": {
+    "build": "max build",
+    "dev": "npm run start:dev",
+    "lint": "npm run tsc",
+    "postinstall": "max setup",
+    "preview": "max preview --port 8000",
+    "start": "cross-env UMI_ENV=dev max dev",
+    "start:dev": "cross-env UMI_ENV=dev MOCK=none max dev",
+    "tsc": "tsc --noEmit"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "@ant-design/icons": "^6.1.0",
+    "@ant-design/pro-components": "^3.1.12-0",
+    "@umijs/max": "^4.6.40",
+    "antd": "^6.2.2",
+    "antd-style": "^4.1.0",
+    "copy-to-clipboard": "^4.0.2",
+    "cross-env": "^10.1.0",
+    "dayjs": "^1.11.19",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^6.0.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
